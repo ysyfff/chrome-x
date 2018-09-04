@@ -1,13 +1,15 @@
-body {
+html, body {
     padding: 0;
     margin: 0;
     background: #333;
     font-size: 14px;
+    /* height: 100%; */
+    width: 100%;
 }
 
 #app {
     margin: 10px 15px;
-    width: 800px;
+    /* width: 800px; */
 }
 
 a {
@@ -22,25 +24,38 @@ a:hover {
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 15px;
     /* border: 1px solid red; */
 }
 
-.content>div {
-    padding: 5px;
+.content .item {
+    /* padding: 5px; */
     /* border: 1px solid green; */
     display: flex;
     flex-wrap: wrap;
+    width: 250px;
     /* justify-content: center;
     align-items: center; */
 }
-.content>div>a{
+.content .item>a{
     display: flex;
     width: 50px;
     justify-content: center;
     align-items: center;
     border: 1px solid green;
     padding: 5px 8px;
-    margin: 2px;
+    margin: 4px 2px;
     border-radius: 3px;
+}
+.content .title, .content .sub-title{
+    color: green;
+    font-size: 18px;
+    margin: 10px 0;
+    /* text-align: center; */
+}
+.content .sub-title{
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
